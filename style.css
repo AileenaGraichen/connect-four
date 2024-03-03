@@ -1,5 +1,7 @@
 body{
     background-color: #B0E2ED;
+    color: #195C85;
+    font-family: 'Roboto', sans-serif;
 }
 
 .container {
@@ -11,44 +13,63 @@ body{
 
 #gameBoard {
     display: grid;
-    grid-template-columns: repeat(7, 50px); /* 7 columns */
-    grid-template-rows: repeat(6, 50px); /* 6 rows */
-    gap: 5px; /* Space between cells */
+    grid-template-columns: repeat(7, 50px); 
+    grid-template-rows: repeat(6, 50px); 
+    gap: 5px; 
     justify-content: center;
     margin-top: 20px;
-    background-color: #888; /* Board background color */
-    border: white 5px solid; /* Border around the board */
-    box-shadow: 0 0 10px 5px #c9c3c3; /* Drop shadow */
+    background-color: #F4F4E6; 
+    border: white 5px solid;
+    box-shadow: 0 0 10px 5px #F4F4E6; 
 }
 
 .cell {
-    width: 50px; /* Width of each cell */
-    height: 50px; /* Height of each cell */
-    background-color: #ddd; /* Color of empty cells */
+    width: 50px; 
+    height: 50px; 
+    background-color: #32B1CC; 
     display: flex;
     justify-content: center;
     align-items: center;
-    position: relative; /* Allows absolute positioning of child elements */
+    position: relative; 
 }
 
 .token {
-    width: 90%; /* Width of the token, relative to the cell */
-    height: 90%; /* Height of the token, relative to the cell */
-    margin: auto; /* Centers the token in the cell */
+    width: 90%; 
+    height: 90%; 
+    margin: auto; 
     position: absolute;
-    top: 5%; /* Positioning from the top of the cell */
-    left: 5%; /* Positioning from the left of the cell */
-    border-radius: 50%; /* Makes the token round */
+    top: 5%; 
+    left: 5%; 
+    border-radius: 50%;
 }
 
 .player1 {
-    background-color: yellow;
+    background-color: #FCF059;
 }
 
 .player2 {
-    background-color: red;
+    background-color: #F98C96;
 }
 
 #banner{
     height: 200px;
 }
+
+.box {
+    float: left;
+    height: 20px;
+    width: 20px;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    border: 2px solid #F4F4E6;
+    border-radius: 3px;
+    clear: both;
+  }
+  
+  .red {
+    background-color: #F98C96;
+  }
+
+  .yellow{
+    background-color: #FCF059;
+  }
