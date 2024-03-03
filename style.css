@@ -1,0 +1,54 @@
+body{
+    background-color: #B0E2ED;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(7, 50px); /* 7 columns */
+    grid-template-rows: repeat(6, 50px); /* 6 rows */
+    gap: 5px; /* Space between cells */
+    justify-content: center;
+    margin-top: 20px;
+    background-color: #888; /* Board background color */
+    border: white 5px solid; /* Border around the board */
+    box-shadow: 0 0 10px 5px #c9c3c3; /* Drop shadow */
+}
+
+.cell {
+    width: 50px; /* Width of each cell */
+    height: 50px; /* Height of each cell */
+    background-color: #ddd; /* Color of empty cells */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; /* Allows absolute positioning of child elements */
+}
+
+.token {
+    width: 90%; /* Width of the token, relative to the cell */
+    height: 90%; /* Height of the token, relative to the cell */
+    margin: auto; /* Centers the token in the cell */
+    position: absolute;
+    top: 5%; /* Positioning from the top of the cell */
+    left: 5%; /* Positioning from the left of the cell */
+    border-radius: 50%; /* Makes the token round */
+}
+
+.player1 {
+    background-color: yellow;
+}
+
+.player2 {
+    background-color: red;
+}
+
+#banner{
+    height: 200px;
+}
